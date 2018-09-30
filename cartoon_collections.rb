@@ -18,7 +18,8 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.detect do |maybe_cheese| 
+  array.detect do |maybe_cheese|
+    pry.binding
     maybe_cheese.include?(cheese_types)
   end
 end
